@@ -1,0 +1,124 @@
+from datetime import datetime
+from google import genai
+import cv2
+from ultralytics import YOLO
+from config import GEMINI_API_KEY
+
+# 1. Configurar el cliente de Gemini con tu API Key provista
+if not GEMINI_API_KEY:
+  raise RuntimeError("Define GEMINI_API_KEY en el entorno.")
+
+client = genai.Client(
+    api_key=GEMINI_API_KEY
+)
+
+# 2. Cargar tu modelo personalizado entrenado (best.pt)
+print("Cargando el modelo personalizado...")
+model = YOLO("best.pt")
+
+# 3. Inicializar la cámara (cambia a 1 o 2 si usas la externa Brio 500)
+cap = cv2.VideoCapture(0)
+
+if not cap.isOpened():
+  print("Error: No se pudo abrir la cámara.")
+  exit()
+
+UMBRAL_CONFIANZA = 0.65
+ids_alertados = set()
+
+print(
+    "¡Sistema de vigilancia con Gemini Activo! Presiona 'q' en la ventana para"
+    " salir."
+)
+
+while cap.isOpened():
+  success, frame = cap.read()
+  if not success:
+    print("No se pudo leer el flujo de video.")
+    break
+
+  # Ejecutar tracking con ByteTrack
+  results = model.track(
+      frame, persist=True, tracker="bytetrack.yaml", verbose=False
+  )
+  annotated_frame = frame.copy()
+
+  if results[0].boxes is not None and results[0].boxes.id is not None:
+    boxes = results[0].boxes.xyxy.cpu().numpy()
+    track_ids = results[0].boxes.id.cpu().numpy()
+    classes = results[0].boxes.cls.cpu().numpy()
+    confidences = results[0].boxes.conf.cpu().numpy()
+
+    annotated_frame = results[0].plot()
+
+    for box, track_id, cls, conf in zip(
+        boxes, track_ids, classes, confidences
+    ):
+      class_id = int(cls)
+      label = model.names[class_id]
+      p_id = int(track_id)
+
+      # Filtrar por confianza estricta
+      if conf >= UMBRAL_CONFIANZA:
+        # Detectar la clase de infracción (ej. 'sin casco')
+        if label == "sin casco":
+          if p_id not in ids_alertados:
+            timestamp_archivo = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+            timestamp_texto = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+            # A. Guardar la foto del fotograma como evidencia física
+            img_nombre = f"infraccion_id_{p_id}_{timestamp_archivo}.jpg"
+            cv2.imwrite(img_nombre, frame)
+            print(f"[EVIDENCIA GUARDADA] Imagen registrada: {img_nombre}")
+
+            # B. Consultar a la API de Gemini para redactar el reporte formal
+            print(
+                "Conectando con Gemini para generar el reporte de fiscalización..."
+            )
+            try:
+              prompt_reporte = (
+                  f"Actúa como un sistema de fiscalización de seguridad"
+                  f" ciudadana en Lima. Se ha detectado a un motociclista"
+                  f" circulando sin casco de protección (Sujeto ID: {p_id},"
+                  f" Certeza de detección: {conf:.2f}). Redacta un reporte"
+                  f" formal, breve y profesional describiendo la infracción"
+                  f" vial cometida para el registro policial."
+              )
+
+              response = client.models.generate_content(
+                  model="gemini-2.5-flash",
+                  contents=prompt_reporte,
+              )
+              reporte_ia = response.text
+            except Exception as e:
+              reporte_ia = (
+                  f"No se pudo conectar con la API de Gemini: {str(e)}"
+              )
+
+            # C. Consolidar el mensaje completo para el archivo TXT
+            mensaje_registro = (
+                f"==================================================\n"
+                f"FECHA Y HORA: {timestamp_texto}\n"
+                f"INFRACCIÓN: Conducir sin casco de protección\n"
+                f"ID DE SUJETO (TRACKING): {p_id}\n"
+                f"NIVEL DE CERTEZA (YOLO): {conf:.2f}\n"
+                f"EVIDENCIA FOTOGRÁFICA: {img_nombre}\n"
+                f"--- REPORTE GENERADO POR GEMINI AI ---\n"
+                f"{reporte_ia}\n"
+                f"==================================================\n\n"
+            )
+
+            # D. Guardar los datos en el archivo de texto
+            with open("registro_alertas.txt", "a", encoding="utf-8") as archivo:
+              archivo.write(mensaje_registro)
+
+            print("¡Alerta y reporte de Gemini guardados en 'registro_alertas.txt'!")
+            ids_alertados.add(p_id)
+
+  cv2.imshow("Sistema de Vigilancia Activa - SENATI 2026", annotated_frame)
+
+  if cv2.waitKey(1) & 0xFF == ord("q"):
+    break
+
+cap.release()
+cv2.destroyAllWindows()

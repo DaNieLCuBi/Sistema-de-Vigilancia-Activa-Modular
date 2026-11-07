@@ -1,0 +1,550 @@
+==================================================
+FECHA Y HORA: 2026-11-05 18:19:07
+INFRACCIÓN / CONTROL: Conducir sin casco o Inspección Manual
+ID DE SUJETO (TRACKING): 999
+NIVEL DE CERTEZA: 1.00
+EVIDENCIA FOTOGRÁFICA: infraccion_id_999_2026-11-05_18-19-07.jpg
+--- REPORTE GENERADO POR GEMINI AI ---
+No se pudo conectar con la API de Gemini: 401 UNAUTHENTICATED. {'error': {'code': 401, 'message': 'API key not valid. Please pass a valid API key.', 'status': 'UNAUTHENTICATED', 'details': [{'@type': 'type.googleapis.com/google.rpc.ErrorInfo', 'reason': 'ACCESS_TOKEN_TYPE_UNSUPPORTED', 'metadata': {'method': 'google.ai.generativelanguage.v1beta.GenerativeService.GenerateContent', 'service': 'generativelanguage.googleapis.com'}}]}}
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:21:45
+TIPO: Inspección Manual Analítica
+ID DE SUJETO: 999
+--- ANÁLISIS INTELIGENTE DE GEMINI ---
+Error al generar análisis con Gemini: 21 validation errors for _GenerateContentParameters
+contents.Content
+  Input should be a valid dictionary or object to extract fields from [type=model_attributes_type, input_value=['Actúa como un sistema ...me_type': 'image/jpeg'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.14/v/model_attributes_type
+contents.str
+  Input should be a valid string [type=string_type, input_value=['Actúa como un sistema ...me_type': 'image/jpeg'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.14/v/string_type
+contents.is-instance[Image]
+  Input should be an instance of Image [type=is_instance_of, input_value=['Actúa como un sistema ...me_type': 'image/jpeg'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.14/v/is_instance_of
+contents.File
+  Input should be a valid dictionary or object to extract fields from [type=model_attributes_type, input_value=['Actúa como un sistema ...me_type': 'image/jpeg'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.14/v/model_attributes_type
+contents.Part
+  Input should be a valid dictionary or object to extract fields from [type=model_attributes_type, input_value=['Actúa como un sistema ...me_type': 'image/jpeg'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.14/v/model_attributes_type
+contents.list[union[str,is-instance[Image],File,Part]].1.str
+  Input should be a valid string [type=string_type, input_value={'data': b'\xff\xd8\xff\x...ime_type': 'image/jpeg'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/string_type
+contents.list[union[str,is-instance[Image],File,Part]].1.is-instance[Image]
+  Input should be an instance of Image [type=is_instance_of, input_value={'data': b'\xff\xd8\xff\x...ime_type': 'image/jpeg'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/is_instance_of
+contents.list[union[str,is-instance[Image],File,Part]].1.File.data
+  Extra inputs are not permitted [type=extra_forbidden, input_value=b'\xff\xd8\xff\xe0\x00\x1...xae\x86\xf0\x89\xff\xd9', input_type=bytes]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[str,is-instance[Image],File,Part]].1.Part.data
+  Extra inputs are not permitted [type=extra_forbidden, input_value=b'\xff\xd8\xff\xe0\x00\x1...xae\x86\xf0\x89\xff\xd9', input_type=bytes]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[str,is-instance[Image],File,Part]].1.Part.mime_type
+  Extra inputs are not permitted [type=extra_forbidden, input_value='image/jpeg', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.Content.data
+  Extra inputs are not permitted [type=extra_forbidden, input_value=b'\xff\xd8\xff\xe0\x00\x1...xae\x86\xf0\x89\xff\xd9', input_type=bytes]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.Content.mime_type
+  Extra inputs are not permitted [type=extra_forbidden, input_value='image/jpeg', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.str
+  Input should be a valid string [type=string_type, input_value={'data': b'\xff\xd8\xff\x...ime_type': 'image/jpeg'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/string_type
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.is-instance[Image]
+  Input should be an instance of Image [type=is_instance_of, input_value={'data': b'\xff\xd8\xff\x...ime_type': 'image/jpeg'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/is_instance_of
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.File.data
+  Extra inputs are not permitted [type=extra_forbidden, input_value=b'\xff\xd8\xff\xe0\x00\x1...xae\x86\xf0\x89\xff\xd9', input_type=bytes]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.Part.data
+  Extra inputs are not permitted [type=extra_forbidden, input_value=b'\xff\xd8\xff\xe0\x00\x1...xae\x86\xf0\x89\xff\xd9', input_type=bytes]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.Part.mime_type
+  Extra inputs are not permitted [type=extra_forbidden, input_value='image/jpeg', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.list[union[str,is-instance[Image],File,Part]]
+  Input should be a valid list [type=list_type, input_value={'data': b'\xff\xd8\xff\x...ime_type': 'image/jpeg'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/list_type
+contents.list[Content].0
+  Input should be a valid dictionary or object to extract fields from [type=model_attributes_type, input_value='Actúa como un sistema e...to analítico y formal.', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/model_attributes_type
+contents.list[Content].1.data
+  Extra inputs are not permitted [type=extra_forbidden, input_value=b'\xff\xd8\xff\xe0\x00\x1...xae\x86\xf0\x89\xff\xd9', input_type=bytes]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[Content].1.mime_type
+  Extra inputs are not permitted [type=extra_forbidden, input_value='image/jpeg', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:22:06
+TIPO: Inspección Manual Analítica
+ID DE SUJETO: 999
+--- ANÁLISIS INTELIGENTE DE GEMINI ---
+Error al generar análisis con Gemini: 21 validation errors for _GenerateContentParameters
+contents.Content
+  Input should be a valid dictionary or object to extract fields from [type=model_attributes_type, input_value=['Actúa como un sistema ...me_type': 'image/jpeg'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.14/v/model_attributes_type
+contents.str
+  Input should be a valid string [type=string_type, input_value=['Actúa como un sistema ...me_type': 'image/jpeg'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.14/v/string_type
+contents.is-instance[Image]
+  Input should be an instance of Image [type=is_instance_of, input_value=['Actúa como un sistema ...me_type': 'image/jpeg'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.14/v/is_instance_of
+contents.File
+  Input should be a valid dictionary or object to extract fields from [type=model_attributes_type, input_value=['Actúa como un sistema ...me_type': 'image/jpeg'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.14/v/model_attributes_type
+contents.Part
+  Input should be a valid dictionary or object to extract fields from [type=model_attributes_type, input_value=['Actúa como un sistema ...me_type': 'image/jpeg'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.14/v/model_attributes_type
+contents.list[union[str,is-instance[Image],File,Part]].1.str
+  Input should be a valid string [type=string_type, input_value={'data': b'\xff\xd8\xff\x...ime_type': 'image/jpeg'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/string_type
+contents.list[union[str,is-instance[Image],File,Part]].1.is-instance[Image]
+  Input should be an instance of Image [type=is_instance_of, input_value={'data': b'\xff\xd8\xff\x...ime_type': 'image/jpeg'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/is_instance_of
+contents.list[union[str,is-instance[Image],File,Part]].1.File.data
+  Extra inputs are not permitted [type=extra_forbidden, input_value=b'\xff\xd8\xff\xe0\x00\x1...b4GB\xe7_\n\xb1\xff\xd9', input_type=bytes]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[str,is-instance[Image],File,Part]].1.Part.data
+  Extra inputs are not permitted [type=extra_forbidden, input_value=b'\xff\xd8\xff\xe0\x00\x1...b4GB\xe7_\n\xb1\xff\xd9', input_type=bytes]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[str,is-instance[Image],File,Part]].1.Part.mime_type
+  Extra inputs are not permitted [type=extra_forbidden, input_value='image/jpeg', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.Content.data
+  Extra inputs are not permitted [type=extra_forbidden, input_value=b'\xff\xd8\xff\xe0\x00\x1...b4GB\xe7_\n\xb1\xff\xd9', input_type=bytes]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.Content.mime_type
+  Extra inputs are not permitted [type=extra_forbidden, input_value='image/jpeg', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.str
+  Input should be a valid string [type=string_type, input_value={'data': b'\xff\xd8\xff\x...ime_type': 'image/jpeg'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/string_type
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.is-instance[Image]
+  Input should be an instance of Image [type=is_instance_of, input_value={'data': b'\xff\xd8\xff\x...ime_type': 'image/jpeg'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/is_instance_of
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.File.data
+  Extra inputs are not permitted [type=extra_forbidden, input_value=b'\xff\xd8\xff\xe0\x00\x1...b4GB\xe7_\n\xb1\xff\xd9', input_type=bytes]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.Part.data
+  Extra inputs are not permitted [type=extra_forbidden, input_value=b'\xff\xd8\xff\xe0\x00\x1...b4GB\xe7_\n\xb1\xff\xd9', input_type=bytes]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.Part.mime_type
+  Extra inputs are not permitted [type=extra_forbidden, input_value='image/jpeg', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.list[union[str,is-instance[Image],File,Part]]
+  Input should be a valid list [type=list_type, input_value={'data': b'\xff\xd8\xff\x...ime_type': 'image/jpeg'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/list_type
+contents.list[Content].0
+  Input should be a valid dictionary or object to extract fields from [type=model_attributes_type, input_value='Actúa como un sistema e...to analítico y formal.', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/model_attributes_type
+contents.list[Content].1.data
+  Extra inputs are not permitted [type=extra_forbidden, input_value=b'\xff\xd8\xff\xe0\x00\x1...b4GB\xe7_\n\xb1\xff\xd9', input_type=bytes]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[Content].1.mime_type
+  Extra inputs are not permitted [type=extra_forbidden, input_value='image/jpeg', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:22:40
+TIPO: Inspección Manual Analítica
+ID DE SUJETO: 999
+--- ANÁLISIS INTELIGENTE DE GEMINI ---
+Error al generar análisis con Gemini: 21 validation errors for _GenerateContentParameters
+contents.Content
+  Input should be a valid dictionary or object to extract fields from [type=model_attributes_type, input_value=['Actúa como un sistema ...me_type': 'image/jpeg'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.14/v/model_attributes_type
+contents.str
+  Input should be a valid string [type=string_type, input_value=['Actúa como un sistema ...me_type': 'image/jpeg'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.14/v/string_type
+contents.is-instance[Image]
+  Input should be an instance of Image [type=is_instance_of, input_value=['Actúa como un sistema ...me_type': 'image/jpeg'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.14/v/is_instance_of
+contents.File
+  Input should be a valid dictionary or object to extract fields from [type=model_attributes_type, input_value=['Actúa como un sistema ...me_type': 'image/jpeg'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.14/v/model_attributes_type
+contents.Part
+  Input should be a valid dictionary or object to extract fields from [type=model_attributes_type, input_value=['Actúa como un sistema ...me_type': 'image/jpeg'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.14/v/model_attributes_type
+contents.list[union[str,is-instance[Image],File,Part]].1.str
+  Input should be a valid string [type=string_type, input_value={'data': b'\xff\xd8\xff\x...ime_type': 'image/jpeg'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/string_type
+contents.list[union[str,is-instance[Image],File,Part]].1.is-instance[Image]
+  Input should be an instance of Image [type=is_instance_of, input_value={'data': b'\xff\xd8\xff\x...ime_type': 'image/jpeg'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/is_instance_of
+contents.list[union[str,is-instance[Image],File,Part]].1.File.data
+  Extra inputs are not permitted [type=extra_forbidden, input_value=b'\xff\xd8\xff\xe0\x00\x1...xc2\x1e\xed\x91\xff\xd9', input_type=bytes]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[str,is-instance[Image],File,Part]].1.Part.data
+  Extra inputs are not permitted [type=extra_forbidden, input_value=b'\xff\xd8\xff\xe0\x00\x1...xc2\x1e\xed\x91\xff\xd9', input_type=bytes]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[str,is-instance[Image],File,Part]].1.Part.mime_type
+  Extra inputs are not permitted [type=extra_forbidden, input_value='image/jpeg', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.Content.data
+  Extra inputs are not permitted [type=extra_forbidden, input_value=b'\xff\xd8\xff\xe0\x00\x1...xc2\x1e\xed\x91\xff\xd9', input_type=bytes]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.Content.mime_type
+  Extra inputs are not permitted [type=extra_forbidden, input_value='image/jpeg', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.str
+  Input should be a valid string [type=string_type, input_value={'data': b'\xff\xd8\xff\x...ime_type': 'image/jpeg'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/string_type
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.is-instance[Image]
+  Input should be an instance of Image [type=is_instance_of, input_value={'data': b'\xff\xd8\xff\x...ime_type': 'image/jpeg'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/is_instance_of
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.File.data
+  Extra inputs are not permitted [type=extra_forbidden, input_value=b'\xff\xd8\xff\xe0\x00\x1...xc2\x1e\xed\x91\xff\xd9', input_type=bytes]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.Part.data
+  Extra inputs are not permitted [type=extra_forbidden, input_value=b'\xff\xd8\xff\xe0\x00\x1...xc2\x1e\xed\x91\xff\xd9', input_type=bytes]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.Part.mime_type
+  Extra inputs are not permitted [type=extra_forbidden, input_value='image/jpeg', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.list[union[str,is-instance[Image],File,Part]]
+  Input should be a valid list [type=list_type, input_value={'data': b'\xff\xd8\xff\x...ime_type': 'image/jpeg'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/list_type
+contents.list[Content].0
+  Input should be a valid dictionary or object to extract fields from [type=model_attributes_type, input_value='Actúa como un sistema e...to analítico y formal.', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/model_attributes_type
+contents.list[Content].1.data
+  Extra inputs are not permitted [type=extra_forbidden, input_value=b'\xff\xd8\xff\xe0\x00\x1...xc2\x1e\xed\x91\xff\xd9', input_type=bytes]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[Content].1.mime_type
+  Extra inputs are not permitted [type=extra_forbidden, input_value='image/jpeg', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:24:05
+TIPO: Inspección Manual Analítica
+ID DE SUJETO: 999
+--- ANÁLISIS INTELIGENTE DE GEMINI ---
+Error al generar análisis con Gemini: 21 validation errors for _GenerateContentParameters
+contents.Content
+  Input should be a valid dictionary or object to extract fields from [type=model_attributes_type, input_value=['Actúa como un sistema ...me_type': 'image/jpeg'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.14/v/model_attributes_type
+contents.str
+  Input should be a valid string [type=string_type, input_value=['Actúa como un sistema ...me_type': 'image/jpeg'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.14/v/string_type
+contents.is-instance[Image]
+  Input should be an instance of Image [type=is_instance_of, input_value=['Actúa como un sistema ...me_type': 'image/jpeg'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.14/v/is_instance_of
+contents.File
+  Input should be a valid dictionary or object to extract fields from [type=model_attributes_type, input_value=['Actúa como un sistema ...me_type': 'image/jpeg'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.14/v/model_attributes_type
+contents.Part
+  Input should be a valid dictionary or object to extract fields from [type=model_attributes_type, input_value=['Actúa como un sistema ...me_type': 'image/jpeg'}], input_type=list]
+    For further information visit https://errors.pydantic.dev/2.14/v/model_attributes_type
+contents.list[union[str,is-instance[Image],File,Part]].1.str
+  Input should be a valid string [type=string_type, input_value={'data': b'\xff\xd8\xff\x...ime_type': 'image/jpeg'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/string_type
+contents.list[union[str,is-instance[Image],File,Part]].1.is-instance[Image]
+  Input should be an instance of Image [type=is_instance_of, input_value={'data': b'\xff\xd8\xff\x...ime_type': 'image/jpeg'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/is_instance_of
+contents.list[union[str,is-instance[Image],File,Part]].1.File.data
+  Extra inputs are not permitted [type=extra_forbidden, input_value=b'\xff\xd8\xff\xe0\x00\x1..._\x91\xec\xc1;#\xff\xd9', input_type=bytes]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[str,is-instance[Image],File,Part]].1.Part.data
+  Extra inputs are not permitted [type=extra_forbidden, input_value=b'\xff\xd8\xff\xe0\x00\x1..._\x91\xec\xc1;#\xff\xd9', input_type=bytes]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[str,is-instance[Image],File,Part]].1.Part.mime_type
+  Extra inputs are not permitted [type=extra_forbidden, input_value='image/jpeg', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.Content.data
+  Extra inputs are not permitted [type=extra_forbidden, input_value=b'\xff\xd8\xff\xe0\x00\x1..._\x91\xec\xc1;#\xff\xd9', input_type=bytes]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.Content.mime_type
+  Extra inputs are not permitted [type=extra_forbidden, input_value='image/jpeg', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.str
+  Input should be a valid string [type=string_type, input_value={'data': b'\xff\xd8\xff\x...ime_type': 'image/jpeg'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/string_type
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.is-instance[Image]
+  Input should be an instance of Image [type=is_instance_of, input_value={'data': b'\xff\xd8\xff\x...ime_type': 'image/jpeg'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/is_instance_of
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.File.data
+  Extra inputs are not permitted [type=extra_forbidden, input_value=b'\xff\xd8\xff\xe0\x00\x1..._\x91\xec\xc1;#\xff\xd9', input_type=bytes]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.Part.data
+  Extra inputs are not permitted [type=extra_forbidden, input_value=b'\xff\xd8\xff\xe0\x00\x1..._\x91\xec\xc1;#\xff\xd9', input_type=bytes]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.Part.mime_type
+  Extra inputs are not permitted [type=extra_forbidden, input_value='image/jpeg', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[union[Content,str,is-instance[Image],File,Part,list[union[str,is-instance[Image],File,Part]]]].1.list[union[str,is-instance[Image],File,Part]]
+  Input should be a valid list [type=list_type, input_value={'data': b'\xff\xd8\xff\x...ime_type': 'image/jpeg'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.14/v/list_type
+contents.list[Content].0
+  Input should be a valid dictionary or object to extract fields from [type=model_attributes_type, input_value='Actúa como un sistema e...to analítico y formal.', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/model_attributes_type
+contents.list[Content].1.data
+  Extra inputs are not permitted [type=extra_forbidden, input_value=b'\xff\xd8\xff\xe0\x00\x1..._\x91\xec\xc1;#\xff\xd9', input_type=bytes]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+contents.list[Content].1.mime_type
+  Extra inputs are not permitted [type=extra_forbidden, input_value='image/jpeg', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.14/v/extra_forbidden
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:26:54
+TIPO: Control Operativo
+ID DE SUJETO: 999
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:35:01
+TIPO: Control Operativo
+ID DE SUJETO: 999
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:35:08
+TIPO: Control Operativo
+ID DE SUJETO: 999
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:35:13
+TIPO: Control Operativo
+ID DE SUJETO: 999
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:38:38
+TIPO: Control Operativo
+ID DE SUJETO: 1
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:38:45
+TIPO: Control Operativo
+ID DE SUJETO: 22
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:38:54
+TIPO: Control Operativo
+ID DE SUJETO: 40
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:39:13
+TIPO: Control Operativo
+ID DE SUJETO: 107
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:39:25
+TIPO: Control Operativo
+ID DE SUJETO: 156
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:39:32
+TIPO: Control Operativo
+ID DE SUJETO: 161
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:41:28
+TIPO: Control Operativo
+ID DE SUJETO: 1
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:41:41
+TIPO: Control Operativo
+ID DE SUJETO: 24
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:41:47
+TIPO: Control Operativo
+ID DE SUJETO: 20
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:43:26
+TIPO: Control Operativo
+ID DE SUJETO: 999
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:44:02
+TIPO: Control Operativo
+ID DE SUJETO: 273
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:44:36
+TIPO: Control Operativo
+ID DE SUJETO: 295
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:44:46
+TIPO: Control Operativo
+ID DE SUJETO: 318
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:45:12
+TIPO: Control Operativo
+ID DE SUJETO: 406
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:45:21
+TIPO: Control Operativo
+ID DE SUJETO: 413
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:45:28
+TIPO: Control Operativo
+ID DE SUJETO: 428
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:46:13
+TIPO: Control Operativo
+ID DE SUJETO: 457
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:46:41
+TIPO: Control Operativo
+ID DE SUJETO: 478
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:47:24
+TIPO: Control Operativo
+ID DE SUJETO: 490
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:48:17
+TIPO: Control Operativo
+ID DE SUJETO: 543
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:48:29
+TIPO: Control Operativo
+ID DE SUJETO: 556
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:49:19
+TIPO: Control Operativo
+ID DE SUJETO: 576
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:49:41
+TIPO: Control Operativo
+ID DE SUJETO: 999
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:50:02
+TIPO: Control Operativo
+ID DE SUJETO: 999
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:50:14
+TIPO: Control Operativo
+ID DE SUJETO: 634
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 18:50:35
+TIPO: Control Operativo
+ID DE SUJETO: 999
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 19:19:57
+TIPO: Control Operativo
+ID DE SUJETO: 999
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+
+==================================================
+FECHA Y HORA: 2026-11-05 19:24:02
+TIPO: Control Operativo
+ID DE SUJETO: 999
+--- REPORTE ---
+Inspección visual registrada correctamente en el puesto de control operativo central.
+==================================================
+

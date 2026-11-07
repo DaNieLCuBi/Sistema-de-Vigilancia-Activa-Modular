@@ -1,0 +1,24 @@
+Con toda la información proporcionada por el profesor Martín Morales, lo que debes hacer para prepararte para la próxima clase es lo siguiente:
+* **Desarrollar y avanzar en la investigación** de tu sistema de vigilancia ciudadana activa con Inteligencia Artificial utilizando la estrategia recomendada.
+* **Implementar la arquitectura técnica** combinando un detector de objetos rápido como YOLOv8 (para detectar armas o elementos de peligro) y enfoques de estimación de pose o análisis de movimiento para reconocer actos violentos o peleas.
+* **Probar y ejecutar el código base en Python** provisto en la ayuda memoria, asegurándote de instalar las librerías necesarias (`ultralytics` y `opencv-python`).
+* **Preparar tus avances** para mostrárselos al profesor en la siguiente sesión.
+* **Llevar tu ordenador portátil (laptop)** al salón de clases para validar el funcionamiento de tus avances utilizando la cámara externa que el profesor llevará.
+
+
+
+### Objetivos Específicos
+
+* **Desplegar una arquitectura de procesamiento en vivo:** Capturar y procesar flujos de video de alta fluidez utilizando OpenCV y Ultralytics YOLO para minimizar el retraso (*lag*) en la visualización.
+
+
+* **Integrar modelos de detección personalizados:** Utilizar pesos entrenados a medida (`best.pt`) para identificar con precisión elementos específicos del dominio de seguridad ciudadana (como placas, cascos o situaciones de alerta).
+
+
+* **Implementar seguimiento de objetos (*Tracking*):** Asignar y mantener identidades únicas persistentes (`track_id`) a los elementos detectados a lo largo de fotogramas consecutivos mediante algoritmos como ByteTrack.
+
+
+* **Optimizar la fiabilidad del sistema:** Configurar filtros por umbrales de confianza y análisis de secuencias para reducir los falsos positivos causados por interferencias o condiciones del entorno.
+
+
+* **Validar el funcionamiento operativo:** Comprobar el rendimiento del software en un entorno real conectando cámaras externas físicas para la demostración práctica de los avances.
